@@ -151,7 +151,7 @@
                 <ul>
 			<h4>Key Characteristics</h4>
 			<li class="py-2 para-light">Operand Address Stored Elsewhere: The instruction does not directly specify the memory address of the operand but points to a register or memory location where the address is stored.</li>
-			<li class="py-2 para-light">2. Two Memory Accesses:</li>
+			<li class="py-2 para-light">Two Memory Accesses:</li>
 			<ul>
 				 <li class="py-2 para-light"> The first access retrieves the address of the operand.</li>
                                  <li class="py-2 para-light"> The second access retrieves the actual data from that address.</li>
@@ -178,9 +178,14 @@
         <div class="row d-flex align-items-center">
             <div class="col-lg-7" data-aos="fade-right">
                 <h1>Register-Indirect Addressing Mode</h1>
-                <p class="py-2 para-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sed accusantium aut dolores inventore architecto modi cupiditate eligendi corporis, illum illo culpa. Reiciendis, molestias. Illum voluptatum quisquam ad veritatis dolorem.</p>
-                <p class="py-2 para-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sed accusantium aut dolores inventore architecto modi cupiditate eligendi corporis, illum illo culpa. Reiciendis, molestias. Illum voluptatum quisquam ad veritatis dolorem.</p>
-
+                <p>Register Indirect Addressing Mode is a variant of indirect addressing mode where the instruction specifies a register that contains the memory address of the operand. The actual data resides in the memory location pointed to by the register, and the instruction accesses it indirectly.</p></p>
+                <ul>
+			<h4>Key Characteristics</h4>
+			<li>Address in Register: The address of the operand is stored in a register. The instruction specifies the register, not the memory location directly.</li>
+			<li>Single Register Reference*: The processor reads the register to obtain the memory address and then fetches the operand from that address.</li>
+			<li>Efficient for Iteration: Ideal for traversing arrays, tables, and data structures, as the register value can be modified dynamically to point to different memory locations.</li>
+			<li>Use Case: Frequently used in scenarios involving pointer arithmetic or dynamic memory access.</li>
+		</ul>
                 <div class="my-3">
                     <a class="btn" href="index.html">Learn More</a>
                 </div>
