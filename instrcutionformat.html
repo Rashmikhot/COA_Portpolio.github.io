@@ -82,7 +82,8 @@
     <!-- Home -->
     <section class="home1 py-5 d-flex align-items-center" id="header">
         <div class="container text-light py-5"  data-aos="fade-right"> 
-            <h1 class="headline">Integrated</span><br>Processor</h1>
+            <h1 class="headline">Addressing </span><br>Modes</h1>
+		<p class="py-2 para-light>Addressing modes define how the operand(s) of an instruction are accessed during program execution. These modes allow flexibility in how data is retrieved or stored, optimizing resource usage and efficiency in programming.</p>
         </div> <!-- end of container -->
     </section> <!-- end of home -->
 <hr style="border: 1px solid #ddd; margin: 40px 0;">
@@ -92,13 +93,16 @@
     <div class="container">
         <div class="row d-flex align-items-center">
             <div class="col-lg-7" data-aos="fade-right">
-                <h1>Brief Description about<br> Processor</h1>
-                <p class="py-2 para-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sed accusantium aut dolores inventore architecto modi cupiditate eligendi corporis, illum illo culpa. Reiciendis, molestias. Illum voluptatum quisquam ad veritatis dolorem.</p>
-                <p class="py-2 para-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sed accusantium aut dolores inventore architecto modi cupiditate eligendi corporis, illum illo culpa. Reiciendis, molestias. Illum voluptatum quisquam ad veritatis dolorem.</p>
-
-                <div class="my-3">
-                    <a class="btn" href="index.html">Learn More</a>
-                </div>
+                <h1>Immediate Addressing Mode</h1>
+                <p class="py-2 para-light">Immediate addressing mode is a technique used in assembly language programming where the operand (the data to be processed) is directly specified within the instruction itself.</p>
+                <p class="py-2 para-light">In this mode, the actual value or data is embedded as part of the instruction, rather than being stored in memory or a register. This makes immediate addressing simple and efficient for certain operations.</p>
+		    <ul>
+			    <li class="py-2 para-light">Direct Operand Inclusion: The operand is written directly in the instruction.</li>
+			     <li class="py-2 para-light">Fast Execution: The data is part of the instruction, no additional memory access is required to fetch the operand, making it faster than other addressing modes.</li>
+			     <li class="py-2 para-light">No Address Field: Immediate addressing does not reference a memory location or a register for the operand. The data is directly provided.</li>
+			     <li class="py-2 para-light">Usafe: This mode is typically used for small, constant values such as initialization, counters, or setting specific flags.</li>
+			     <li class="py-2 para-light">Size Limitation: The size of the immediate data is often constrained by the architecture of the processor and the instruction format. For instance, in an 8-bit microcontroller, the immediate data might be limited to 8 bits.</li>
+		    </ul>
             </div>
             <div class="col-lg-5 text-center py-4 py-sm-0" data-aos="fade-down">
                 <img class="img-fluid" src="./assets/images/about.jpg" alt="about">
