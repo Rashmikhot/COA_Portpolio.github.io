@@ -97,6 +97,7 @@
                 <p class="py-2 para-light">Immediate addressing mode is a technique used in assembly language programming where the operand (the data to be processed) is directly specified within the instruction itself.</p>
                 <p class="py-2 para-light">In this mode, the actual value or data is embedded as part of the instruction, rather than being stored in memory or a register. This makes immediate addressing simple and efficient for certain operations.</p>
 		    <ul>
+			    <h4>Key Characteristics</h4>
 			    <li class="py-2 para-light">Direct Operand Inclusion: The operand is written directly in the instruction.</li>
 			     <li class="py-2 para-light">Fast Execution: The data is part of the instruction, no additional memory access is required to fetch the operand, making it faster than other addressing modes.</li>
 			     <li class="py-2 para-light">No Address Field: Immediate addressing does not reference a memory location or a register for the operand. The data is directly provided.</li>
@@ -119,10 +120,15 @@
         <div class="row d-flex align-items-center">
             <div class="col-lg-7" data-aos="fade-right">
                 <h1>Direct Addressing Mode</h1>
-                <p class="py-2 para-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sed accusantium aut dolores inventore architecto modi cupiditate eligendi corporis, illum illo culpa. Reiciendis, molestias. Illum voluptatum quisquam ad veritatis dolorem.</p>
-                <p class="py-2 para-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sed accusantium aut dolores inventore architecto modi cupiditate eligendi corporis, illum illo culpa. Reiciendis, molestias. Illum voluptatum quisquam ad veritatis dolorem.</p>
-
-                <div class="my-3">
+                <p class="py-2 para-light">Direct addressing mode* is another common method used in assembly language programming, where the address of the operand (data to be operated upon) is explicitly specified within the instruction. Instead of providing the actual data, the instruction contains the memory address where the data is stored.</p>
+               <ul>
+		        <h4>Key Characteristics</h4>
+		       <li class="py-2 para-light">Operand Address Specified: The instruction explicitly mentions the memory address where the data resides. The processor fetches the operand from that memory location.</li>
+		         <li class="py-2 para-light">Single Memory Access: The instruction retrieves the operand from the specified address in memory during execution.</li>
+		         <li class="py-2 para-light">No Intermediate Register: Data is fetched directly from memory and used in the operation without an intermediary register.</li>
+		         <li class="py-2 para-light">Use Case: Suitable for accessing variables or constants stored at fixed memory locations.</li>
+	       </ul> 
+		    <div class="my-3">
                     <a class="btn" href="index.html">Learn More</a>
                 </div>
             </div>
@@ -141,9 +147,18 @@
         <div class="row d-flex align-items-center">
             <div class="col-lg-7" data-aos="fade-right">
                 <h1>Indirect Addressing Mode</h1>
-                <p class="py-2 para-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sed accusantium aut dolores inventore architecto modi cupiditate eligendi corporis, illum illo culpa. Reiciendis, molestias. Illum voluptatum quisquam ad veritatis dolorem.</p>
-                <p class="py-2 para-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sed accusantium aut dolores inventore architecto modi cupiditate eligendi corporis, illum illo culpa. Reiciendis, molestias. Illum voluptatum quisquam ad veritatis dolorem.</p>
-
+                <p class="py-2 para-light">Indirect addressing mode is a method in assembly language programming where the instruction specifies a register or memory location that contains the address of the operand, rather than the operand itself. In this mode, the actual data is accessed indirectly through the address stored in the specified register or memory location.</p>
+                <ul>
+			<h4>Key Characteristics</h4>
+			<li class="py-2 para-light">Operand Address Stored Elsewhere: The instruction does not directly specify the memory address of the operand but points to a register or memory location where the address is stored.</li>
+			<li class="py-2 para-light">2. Two Memory Accesses:</li>
+			<ul>
+				 <li class="py-2 para-light"> The first access retrieves the address of the operand.</li>
+                                 <li class="py-2 para-light"> The second access retrieves the actual data from that address.</li>
+			</ul></li>
+			<li class="py-2 para-light">Flexibility: Allows dynamic or variable addressing, making it useful for handling arrays, tables, and pointers.</li>
+			<li class="py-2 para-light">Use Case: Often used when the data location needs to be calculated or when working with data structures like stacks and linked lists.</li>
+		</ul>
                 <div class="my-3">
                     <a class="btn" href="index.html">Learn More</a>
                 </div>
