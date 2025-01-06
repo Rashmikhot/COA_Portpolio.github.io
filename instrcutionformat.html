@@ -166,10 +166,30 @@
                 <p>Register Indirect Addressing Mode is a variant of indirect addressing mode where the instruction specifies a register that contains the memory address of the operand. The actual data resides in the memory location pointed to by the register, and the instruction accesses it indirectly.</p></p>
                 <ul>
 			<h4>Key Characteristics</h4>
-			<li>Address in Register: The address of the operand is stored in a register. The instruction specifies the register, not the memory location directly.</li>
-			<li>Single Register Reference*: The processor reads the register to obtain the memory address and then fetches the operand from that address.</li>
-			<li>Efficient for Iteration: Ideal for traversing arrays, tables, and data structures, as the register value can be modified dynamically to point to different memory locations.</li>
-			<li>Use Case: Frequently used in scenarios involving pointer arithmetic or dynamic memory access.</li>
+			<li class="py-2 para-light">Address in Register: The address of the operand is stored in a register. The instruction specifies the register, not the memory location directly.</li>
+			<li class="py-2 para-light">Single Register Reference*: The processor reads the register to obtain the memory address and then fetches the operand from that address.</li>
+			<li class="py-2 para-light">Efficient for Iteration: Ideal for traversing arrays, tables, and data structures, as the register value can be modified dynamically to point to different memory locations.</li>
+			<li class="py-2 para-light">Use Case: Frequently used in scenarios involving pointer arithmetic or dynamic memory access.</li>
+		</ul>
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</section> <!-- end of course introduction -->
+	<hr style="border: 1px solid #ddd; margin: 40px 0;">
+
+	<!--addressing modes4 -->
+<section class="about d-flex align-items-center text-light py-5" id="about">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-lg-7" data-aos="fade-right">
+	    </div>
+                <h1>Register Addressing Mode</h1>
+	<p>Register addressing mode is a method used by processors to access operands stored directly in registers instead of memory. In this addressing mode, the operand for an instruction is located in a register, which is a small, fast storage area within the CPU. The instruction specifies the register by its name or number, and the operation is performed directly on the contents of that register.</p>
+                <ul>
+			<h4>Key Characteristics</h4>
+			<li class="py-2 para-light">Fast Access: Registers provide the fastest data access.</li>
+			<li class="py-2 para-light">No Memory Access: Operands are directly in registers, avoiding memory fetch.</li>
+			<li class="py-2 para-light">Efficient: Suitable for simple, quick operations like arithmetic and data transfer.</li>
+			<li class="py-2 para-light">Limited Operand Storage: Restricted by the number of registers available in the CPU.</li>
 		</ul>
         </div> <!-- end of row -->
     </div> <!-- end of container -->
