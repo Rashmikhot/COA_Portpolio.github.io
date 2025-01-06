@@ -101,9 +101,35 @@
     <div class="container">
         <div class="row d-flex align-items-center">
             <div class="col-lg-7" data-aos="fade-right">
-                <h1>Micro<br> Instructions</h1>
-                <p class="py-2 para-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sed accusantium aut dolores inventore architecto modi cupiditate eligendi corporis, illum illo culpa. Reiciendis, molestias. Illum voluptatum quisquam ad veritatis dolorem.</p>
-                <p class="py-2 para-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sed accusantium aut dolores inventore architecto modi cupiditate eligendi corporis, illum illo culpa. Reiciendis, molestias. Illum voluptatum quisquam ad veritatis dolorem.</p>
+                <h1>Instruction Life Cycle</h1>
+                <p class="py-2 para-light">The instruction lifecycle refers to the sequence of stages a CPU follows to execute an instruction. Here’s a step-by-step explanation:</p>
+		    <ol>
+			    <h5>Fetch Operand</h5>
+			     <li class="py-2 para-light">The Program Counter (PC) points to the address of the next instruction.</li>
+			     <li class="py-2 para-light">The instruction is fetched from memory and placed in the Memory Buffer Register (MBR).</li>
+			     <li class="py-2 para-light">The Instruction Register (IR) stores the fetched instruction.</li>
+			     <li class="py-2 para-light">The PC is incremented to point to the next instruction.</li>
+		    </ol>
+		    <ol>
+			    <h5>Decode</h5>
+			    <li class="py-2 para-light">The instruction in the IR is decoded by the Control Unit (CU).</li>
+			    <li class="py-2 para-light">The CU determines what action needs to be performed (e.g., arithmetic operation, memory access, jump).</li>
+			    <li class="py-2 para-light">It identifies the operands and any necessary data for the operation.</li>	    
+		    </ol>
+		    <ol>
+			    <h5>Fetch Operad</h5>
+			      <li class="py-2 para-light">If the instruction requires operands (data), the addresses of the operands are sent to the Memory Address Register (MAR) to fetch them from memory.</li>
+			      <li class="py-2 para-light">The operands are loaded into the appropriate registers or memory.</li>	    
+		    </ol>
+		    <ol>
+			    <h5>Execute</h5>
+			     <li class="py-2 para-light">The Arithmetic Logic Unit (ALU) performs the specified operation (e.g., addition, subtraction, logical operations).</li>
+			      <li class="py-2 para-light">The result of the operation is generated.</li>
+		    </ol>
+		    <ol>
+			    <h5>Write-Back</h5>
+			    <li class="py-2 para-light">The result from the ALU is written back to the destination register or memory location, as needed.</li>
+		    </ol>
             </div>
             <div class="col-lg-5 text-center py-4 py-sm-0" data-aos="fade-down">
                 <img class="img-fluid" src="./assets/images/about.jpg" alt="about">
@@ -111,55 +137,6 @@
         </div> <!-- end of row -->
     </div> <!-- end of container -->
 </section> <!-- end of course introduction -->
-<!-- Horizontal Line -->
-<hr style="border: 1px solid #ddd; margin: 40px 0;">
-
-   
-    <!-- Work -->
-    <section class="work d-flex align-items-center py-5" >
-        <div class="container-fluid text-light">
-            <div class="row">
-                <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right">
-                    <img class="img-fluid" src="./assets/images/work.jpg" alt="work">        
-                </div>
-                <div class="col-lg-5 d-flex align-items-center px-4 py-3" data-aos="">
-                    <div class="row">
-                        <div class="text-center text-lg-start py-4 pt-lg-0">
-                            <p>OUR WORK</p>
-                            <h2 class="py-2">Explore unlimited possibilities</h2>
-                            <p class="para-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos dicta mollitia totam explicabo obcaecati quia laudantium repudiandae.</p>
-                        </div>
-                        <div class="container" data-aos="fade-up">
-                            <div class="row g-5">
-                                <div class="col-6 text-start" >
-                                    <i class="fas fa-briefcase fa-2x text-start"></i>
-                                    <h2 class="purecounter" data-purecounter-start="0" data-purecounter-end="1258" data-purecounter-duration="3">1</h2>
-                                    <p>PROJECTS COMPLETED</p>
-                                </div>
-                                <div class="col-6" >
-                                    <i class="fas fa-award fa-2x"></i>
-                                    <h2 class="purecounter" data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="3">1</h2>
-                                    <p>AWARDS</p>
-                                </div>
-                                <div class="col-6">
-                                    <i class="fas fa-users fa-2x"></i>
-                                    <h2 class="purecounter" data-purecounter-start="0" data-purecounter-end="1255" data-purecounter-duration="3">1</h2>
-                                    <p>CUSTOMER ACTIVE</p>
-                                </div>
-                                <div class="col-6">
-                                    <i class="fas fa-clock fa-2x"></i>
-                                    <h2 class="purecounter" data-purecounter-start="0" data-purecounter-end="1157" data-purecounter-duration="3">1</h2>
-                                    <p>GOOD REVIEWS</p>
-                                </div>
-                            </div>
-                        </div> <!-- end of container -->
-                    </div> <!-- end of row -->
-                </div> <!-- end of col-lg-5 -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </section> <!-- end of work -->
-
-    
     <!-- Scripts -->
     <script src="./js/bootstrap.min.js"></script><!-- Bootstrap framework -->
     <script src="./js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
