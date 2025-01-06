@@ -385,6 +385,8 @@
 			    <li class="py-2 para-light">ALU: A 16-bit ALU designed with logic operators, arithmetic operators, and shift operators performs essential computations on 16-bit binary data. Here’s how it functions based on the specified operators:</li>
 			    <li class="py-2 para-light">Logic Operators: Perform bitwise operations (AND, OR, XOR, and NOT) directly on the 16-bit inputs to manipulate individual bits for logical decision-making.</li>
 			    <li class="py-2 para-light">Arithmetic Operators: Carry out basic arithmetic operations like addition and subtraction, processing 16-bit numbers. These operations support carry and borrow for multi-bit calculations.</li>
+			    <li class="py-2 para-light">Shift Operators: Include left and right shifts, which reposition bits in the 16-bit data. These are often used for multiplication, division, or data alignment.</li>
+			    <li class="py-2 para-light">Operation Selection: The ALU uses control signals to choose between logic, arithmetic, or shift operations based on the current instruction.</li>
 			    <li class="py-2 para-light">Output: Produces a 16-bit result along with status flags like Zero (Z) and Carry (C), indicating operation success or overflow conditions.</li>
 		    </ul>     
             </div>
@@ -406,6 +408,7 @@
 			    <li class="py-2 para-light">Purpose: The program counter holds the address of the next instruction to be executed in a program, ensuring sequential execution of instructions.</li>
 			    <li class="py-2 para-light">Incremental Functionality: After each instruction fetch, the PC is automatically incremented to point to the next memory location containing the subsequent instruction.</li>
 			    <li class="py-2 para-light">Branching and Jumping: During branch or jump instructions, the PC is updated with a new address, enabling non-sequential execution of instructions.</li>
+			    <li class="py-2 para-light">Size: The size of the PC depends on the processor architecture. For example, a 16-bit processor has a 16-bit PC, allowing it to address up to 216=65,5362^{16} = 65,536216=65,536 memory locations.</li>
 			    <li class="py-2 para-light">Control Signal: The PC operates under control signals that direct its actions, such as increment, load, or reset, based on the instruction flow.</li>
 		    </ul>     
             </div>
@@ -428,6 +431,7 @@
 			    <li class="py-2 para-light">Instruction Decoding: It decodes the fetched instructions from memory and determines the sequence of operations to execute the instruction.</li>
 			    <li class="py-2 para-light">Control Signals: Generates control signals for various processor components (e.g., ALU, registers, memory, I/O) to perform operations like data transfer, arithmetic, logic, and branching.</li>
 			    <li class="py-2 para-light">Microprogrammed Control Unit: Uses a microinstruction set stored in memory to generate control signals, offering flexibility for complex instruction sets.</li>
+			    <li  class="py-2 para-light">Role in Clock Cycles: Synchronizes all operations with the system clock, ensuring correct timing for each step in the instruction cycle (fetch, decode, execute </li>
 		    </ul>     
             </div>
 		<div class="col-lg-5 text-center py-4 py-sm-0" data-aos="fade-down">
