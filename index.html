@@ -347,6 +347,78 @@
         </div>
     </section>
     <hr style="border: 1px solid #ddd; margin: 40px 0;">
+	  <!-- Problem Statement-->
+ <section class="about d-flex align-items-center text-light py-5" id="about">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-lg-7" data-aos="fade-right">
+		     <h1>Processor Design</h1>
+		    <ul>
+			    <h4>Problem Statement: Design a 16-bit processor with 1 address format and having direct addressing mode.</h4>
+			    <p class="py-2 para-light">Processor Type:
+
+A 16-bit processor capable of handling 16-bit wide instructions and data.
+
+Designed with a 1-address instruction format and operates in direct addressing mode.
+
+Instruction Format:
+
+The 16-bit instruction is divided into:
+
+8-bit Opcode: Specifies the operation (e.g., LOAD, STORE, ADD).
+
+8-bit Address: Directly specifies the memory location of the operand.
+
+Direct Addressing Mode:
+
+The operand is stored at a specific address in RAM.
+
+The address field in the instruction points directly to this location.
+
+Core Components:
+
+ROM: Stores the program instructions.
+
+RAM: Stores operands and results during execution.
+
+Registers: Includes an accumulator (RZ) and other general-purpose registers (RA, RB) for temporary data storage.
+
+Control Signals:
+
+Includes signals like LD (load), STR (store), CLR (clear), and others to manage data movement and execution.
+
+Data Path:
+
+The processor follows a fetch-decode-execute cycle:
+
+Fetch instructions from ROM using the Program Counter (PC).
+
+Decode the opcode and address in the Instruction Register (IR).
+
+Perform operations using the ALU and store results in RAM or registers.
+
+Arithmetic Logic Unit (ALU):
+
+Performs arithmetic (e.g., ADD, SUB) and logic (e.g., AND, OR) operations.
+
+Uses inputs from registers and/or RAM.
+
+Program Counter (PC):
+
+Holds the address of the next instruction to be executed.
+
+Automatically increments after each instruction fetch.</p>
+		    </ul>     
+            </div>
+		<div class="col-lg-5 text-center py-4 py-sm-0" data-aos="fade-down">
+                <img class="img-fluid" src="./assets/images/course overview.jpg" alt="about">
+            </div>
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</section> <!-- end of about -->
+<!-- Horizontal Line -->
+<hr style="border: 1px solid #ddd; margin: 40px 0;">
+
 	
 	 <!--ALU -->
  <section class="about d-flex align-items-center text-light py-5" id="about">
