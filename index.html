@@ -356,59 +356,18 @@
 		     <h1>Processor Design</h1>
 		    <ul>
 			    <h4>Problem Statement: Design a 16-bit processor with 1 address format and having direct addressing mode.</h4>
-			    <pre class="py-2 para-light">Processor Type:
-
-A 16-bit processor capable of handling 16-bit wide instructions and data.
-
-Designed with a 1-address instruction format and operates in direct addressing mode.
-
-Instruction Format:
-
-The 16-bit instruction is divided into:
-
-8-bit Opcode: Specifies the operation (e.g., LOAD, STORE, ADD).
-
-8-bit Address: Directly specifies the memory location of the operand.
-
-Direct Addressing Mode:
-
-The operand is stored at a specific address in RAM.
-
-The address field in the instruction points directly to this location.
-
-Core Components:
-
-ROM: Stores the program instructions.
-
-RAM: Stores operands and results during execution.
-
-Registers: Includes an accumulator (RZ) and other general-purpose registers (RA, RB) for temporary data storage.
-
-Control Signals:
-
-Includes signals like LD (load), STR (store), CLR (clear), and others to manage data movement and execution.
-
-Data Path:
-
-The processor follows a fetch-decode-execute cycle:
-
-Fetch instructions from ROM using the Program Counter (PC).
-
-Decode the opcode and address in the Instruction Register (IR).
-
-Perform operations using the ALU and store results in RAM or registers.
-
-Arithmetic Logic Unit (ALU):
-
-Performs arithmetic (e.g., ADD, SUB) and logic (e.g., AND, OR) operations.
-
-Uses inputs from registers and/or RAM.
-
-Program Counter (PC):
-
-Holds the address of the next instruction to be executed.
-
-Automatically increments after each instruction fetch.</pre>     
+			    <li class="py-2 para-light">Processor Type: A 16-bit processor capable of handling 16-bit wide instructions and data.</li>
+			   <li class="py-2 para-light"> Designed with a 1-address instruction format and operates in direct addressing mode.</li>
+			 <li class="py-2 para-light"></li>
+			     <li class="py-2 para-light">Instruction Format:The 16-bit instruction is divided into:</li>
+			     <li class="py-2 para-light">8-bit Opcode: Specifies the operation (e.g., LOAD, STORE, ADD).</li>
+			     <li class="py-2 para-light">8-bit Address: Directly specifies the memory location of the operand.</li>
+			   <li class="py-2 para-light">Direct Addressing Mode:</li> 
+			    <li class="py-2 para-light">The operand is stored at a specific address in RAM.</li>
+			      <li class="py-2 para-light">The address field in the instruction points directly to this location.</li>
+			      <li class="py-2 para-light">Core Components:ROM:Stores the program instructions.</li>
+			      <li class="py-2 para-light">RAM: Stores operands and results during execution.</li>
+			      <li class="py-2 para-light">Control Signals:Includes signals like LD (load), STR (store), CLR (clear), and others to manage data movement and execution.</li>  
         </div> <!-- end of row -->
     </div> <!-- end of container -->
 </section> <!-- end of about -->
